@@ -1,0 +1,142 @@
+{
+	"type": "FeatureCollection",
+	"typeMap": "markers",
+	"features": [
+		{
+			"type": "Feature",
+			"typeResp": "markers",
+			"properties": {
+				"Teve Covid? ": "S",
+				"Quantas vezes teve Covid? ": "0",
+				"Vacinado? ": "S",
+				"Quantas doses tomou? ": "0"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-3.7473297,
+					-38.5253981
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"typeResp": "markers",
+			"properties": {
+				"Teve Covid? ": "S",
+				"Quantas vezes teve Covid? ": "1",
+				"Vacinado? ": "S",
+				"Quantas doses tomou? ": "4"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-3.7473606,
+					-38.5254256
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"typeResp": "markers",
+			"properties": {
+				"Teve Covid? ": "S",
+				"Quantas vezes teve Covid? ": "4",
+				"Vacinado? ": "S",
+				"Quantas doses tomou? ": "1"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-3.743295,
+					-38.531543
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"typeResp": "markers",
+			"properties": {
+				"Teve Covid? ": "S",
+				"Quantas vezes teve Covid? ": "1",
+				"Vacinado? ": "S",
+				"Quantas doses tomou? ": "4"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-3.751475,
+					-38.530341
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"typeResp": "markers",
+			"properties": {
+				"Teve Covid? ": "S",
+				"Quantas vezes teve Covid? ": "2",
+				"Vacinado? ": "S",
+				"Quantas doses tomou? ": "3"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-3.746893,
+					-38.51648
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"typeResp": "markers",
+			"properties": {
+				"Teve Covid? ": "S",
+				"Quantas vezes teve Covid? ": "4",
+				"Vacinado? ": "S",
+				"Quantas doses tomou? ": "1"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-3.738499,
+					-38.519827
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"typeResp": "markers",
+			"properties": {
+				"Teve Covid? ": "S",
+				"Quantas vezes teve Covid? ": "5",
+				"Vacinado? ": "N",
+				"Quantas doses tomou? ": "0"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-3.7472946,
+					-38.525389
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"typeResp": "markers",
+			"properties": {
+				"Teve Covid? ": "S",
+				"Quantas vezes teve Covid? ": "2",
+				"Vacinado? ": "N",
+				"Quantas doses tomou? ": "0"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-3.755672,
+					-38.516566
+				]
+			}
+		}
+	]
+}
