@@ -6,6 +6,7 @@
 }
 
 .info {
+    display: block;
     padding: 8px 15px;
     font: 14px/16px Arial, Helvetica, sans-serif;
     background: white;
@@ -14,6 +15,7 @@
 }
 
 .info h4,
+.info h3,
 .info p {
     margin: 0;
     padding: 0;
@@ -21,9 +23,21 @@
     text-align: left;
 }
 
+.info p {
+    margin-top: 10px;
+}
+
+.detail span {
+    margin: 0;
+}
+
 .info hr {
     width: 100%;
     color: black;
+}
+
+.info h3 {
+    color: #555;
 }
 
 .legend {
@@ -40,10 +54,12 @@
 
 .legendHeader {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    vertical-align: middle;
 }
 
-.legendHeader h4 {
+.legendHeader h4,
+.info h3 {
     margin-right: 10px;
     margin-top: 10px;
 }
@@ -52,7 +68,7 @@
     background-color: #FFF;
     border: 1px solid #FFF;
     border-radius: 6px;
-    color: #8B8787;
+    color: #555;
     cursor: pointer;
 }
 
