@@ -1,0 +1,239 @@
+{
+    "typeMap": "both",
+    "polygons": {
+        "features": [
+            {
+                "type": "Feature",
+                "properties": {
+                    "socioeconomico": [
+                        1,
+                        1,
+                        5
+                    ],
+                    "violência": [
+                        10,
+                        50,
+                        20,
+                        10
+                    ]
+                },
+                "geometry": {
+                    "coordinates": [
+                        [
+                            [
+                                -38.523201385530655,
+                                -3.7223490419005287
+                            ],
+                            [
+                                -38.57008465273458,
+                                -3.718450336533465
+                            ],
+                            [
+                                -38.63543708580613,
+                                -3.7521204033551214
+                            ],
+                            [
+                                -38.556232778333566,
+                                -3.820519794273906
+                            ],
+                            [
+                                -38.5082839823296,
+                                -3.7733850409051257
+                            ],
+                            [
+                                -38.523201385530655,
+                                -3.7223490419005287
+                            ]
+                        ]
+                    ],
+                    "type": "Polygon"
+                },
+                "id": 0
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "socioeconomico": [
+                        3,
+                        4,
+                        2,
+                        1
+                    ],
+                    "violência": [
+                        10,
+                        10,
+                        8
+                    ]
+                },
+                "geometry": {
+                    "coordinates": [
+                        [
+                            [
+                                -38.70594772198518,
+                                -3.6991563850541667
+                            ],
+                            [
+                                -38.67879171781826,
+                                -3.7623861115869914
+                            ],
+                            [
+                                -38.611548278930144,
+                                -3.7068990444894183
+                            ],
+                            [
+                                -38.658101428930024,
+                                -3.695285029960246
+                            ],
+                            [
+                                -38.70594772198518,
+                                -3.6991563850541667
+                            ]
+                        ]
+                    ],
+                    "type": "Polygon"
+                },
+                "id": 1
+            }
+        ]
+    },
+    "markers": {
+        "features": [
+            {
+                "type": "Feature",
+                "typeResp": "markers",
+                "properties": {
+                    "Teve Covid? ": "S",
+                    "Quantas vezes teve Covid? ": "0",
+                    "Vacinado? ": "S",
+                    "Quantas doses tomou? ": "0"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -3.7473297,
+                        -38.5253981
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "typeResp": "markers",
+                "properties": {
+                    "Teve Covid? ": "S",
+                    "Quantas vezes teve Covid? ": "1",
+                    "Vacinado? ": "S",
+                    "Quantas doses tomou? ": "4"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -3.7473606,
+                        -38.5254256
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "typeResp": "markers",
+                "properties": {
+                    "Teve Covid? ": "S",
+                    "Quantas vezes teve Covid? ": "4",
+                    "Vacinado? ": "S",
+                    "Quantas doses tomou? ": "1"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -3.743295,
+                        -38.531543
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "typeResp": "markers",
+                "properties": {
+                    "Teve Covid? ": "S",
+                    "Quantas vezes teve Covid? ": "1",
+                    "Vacinado? ": "S",
+                    "Quantas doses tomou? ": "4"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -3.751475,
+                        -38.530341
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "typeResp": "markers",
+                "properties": {
+                    "Teve Covid? ": "S",
+                    "Quantas vezes teve Covid? ": "2",
+                    "Vacinado? ": "S",
+                    "Quantas doses tomou? ": "3"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -3.746893,
+                        -38.51648
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "typeResp": "markers",
+                "properties": {
+                    "Teve Covid? ": "S",
+                    "Quantas vezes teve Covid? ": "4",
+                    "Vacinado? ": "S",
+                    "Quantas doses tomou? ": "1"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -3.738499,
+                        -38.519827
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "typeResp": "markers",
+                "properties": {
+                    "Teve Covid? ": "S",
+                    "Quantas vezes teve Covid? ": "5",
+                    "Vacinado? ": "N",
+                    "Quantas doses tomou? ": "0"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -3.7472946,
+                        -38.525389
+                    ]
+                }
+            },
+            {
+                "type": "Feature",
+                "typeResp": "markers",
+                "properties": {
+                    "Teve Covid? ": "S",
+                    "Quantas vezes teve Covid? ": "2",
+                    "Vacinado? ": "N",
+                    "Quantas doses tomou? ": "0"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -3.755672,
+                        -38.516566
+                    ]
+                }
+            }
+        ]
+    }
+}

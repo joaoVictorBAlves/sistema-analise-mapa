@@ -4,7 +4,6 @@ import * as d3 from "d3";
 import "pixi.js";
 let scaledCoordinates = null;
 
-
 const usePolygonOverlay = (map, data, variable, agrouped, mapScale, scaleColor, setDetails, setLocation, setFocusPolygon) => {
     const polygonOverlay = (() => {
         let firstDraw = true;
@@ -99,7 +98,6 @@ const usePolygonOverlay = (map, data, variable, agrouped, mapScale, scaleColor, 
     const bounds = geoBounds({ type: 'MultiPolygon', coordinates: [scaledCoordinates] });
     console.log(bounds)
     map.fitBounds([[bounds[0][1], bounds[0][0]], [bounds[1][1], bounds[1][0]]]);
-    // map.fitBounds(bounds);
 }
 
 export default usePolygonOverlay;

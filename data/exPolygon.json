@@ -1,0 +1,254 @@
+{
+    "type": "FeatureCollection",
+    "typeMap": "Polygons",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -46.64859124333205,
+                            -23.550142004448773
+                        ],
+                        [
+                            -46.64884099947432,
+                            -23.557353862098594
+                        ],
+                        [
+                            -46.641847827498964,
+                            -23.55826962522937
+                        ],
+                        [
+                            -46.635603923949276,
+                            -23.554377587851206
+                        ],
+                        [
+                            -46.62461465370234,
+                            -23.539609692030936
+                        ],
+                        [
+                            -46.647841974906356,
+                            -23.53754892354131
+                        ],
+                        [
+                            -46.64859124333205,
+                            -23.550142004448773
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "Question 1": [
+                    [
+                        "Resposta 1"
+                    ],
+                    [
+                        "Resposta 2",
+                        "Resposta 3"
+                    ],
+                    [
+                        "Resposta 4"
+                    ]
+                ],
+                "Question 2": [
+                    [
+                        "Resposta 1"
+                    ],
+                    [
+                        "Resposta 2",
+                        "Resposta 3"
+                    ],
+                    [
+                        "Resposta 4"
+                    ]
+                ],
+                "Question 3": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ],
+                "Question 4": [
+                    "José",
+                    "Maria",
+                    "Clara",
+                    "Otavio",
+                    "Josefo"
+                ],
+                "Question 5": [
+                    "Sim",
+                    "Não"
+                ],
+                "Question 6": [
+                    "Resposta A",
+                    "Resposta B",
+                    "Resposta C",
+                    "Resposta D"
+                ],
+                "region_name": "Região 1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -46.607506357977115,
+                            -23.532740338176453
+                        ],
+                        [
+                            -46.60238635706679,
+                            -23.54979857278569
+                        ],
+                        [
+                            -46.57441366916552,
+                            -23.54911170676783
+                        ],
+                        [
+                            -46.58740098854827,
+                            -23.517855507778847
+                        ],
+                        [
+                            -46.607506357977115,
+                            -23.532740338176453
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "Question 1": [
+                    [
+                        "Resposta 1",
+                        "Resposta 2"
+                    ],
+                    [
+                        "Resposta 3",
+                        "Resposta 4"
+                    ],
+                    [
+                        "Resposta 5"
+                    ]
+                ],
+                "Question 2": [
+                    [
+                        "Resposta 1"
+                    ],
+                    [
+                        "Resposta 2",
+                        "Resposta 3",
+                        "Resposta 4"
+                    ],
+                    [
+                        "Resposta 5",
+                        "Resposta 6"
+                    ]
+                ],
+                "Question 3": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6"
+                ],
+                "Question 4": [
+                    "João",
+                    "Pedro",
+                    "Maria",
+                    "Clara",
+                    "José",
+                    "Antônio"
+                ],
+                "region_name": "Região 2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -46.62261660456656,
+                            -23.551057817830326
+                        ],
+                        [
+                            -46.61862050629492,
+                            -23.56284834515114
+                        ],
+                        [
+                            -46.601262454427456,
+                            -23.559299851123512
+                        ],
+                        [
+                            -46.61512392030727,
+                            -23.555522316692148
+                        ],
+                        [
+                            -46.61187709046189,
+                            -23.549226184687058
+                        ],
+                        [
+                            -46.62261660456656,
+                            -23.551057817830326
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "Question 1": [
+                    [
+                        "Resposta 1",
+                        "Resposta 3",
+                        "Resposta 5"
+                    ],
+                    [
+                        "Resposta 2",
+                        "Resposta 4"
+                    ],
+                    [
+                        "Resposta 6"
+                    ]
+                ],
+                "Question 2": [
+                    [
+                        "Resposta 1",
+                        "Resposta 3"
+                    ],
+                    [
+                        "Resposta 2"
+                    ],
+                    [
+                        "Resposta 4",
+                        "Resposta 5",
+                        "Resposta 6"
+                    ]
+                ],
+                "Question 3": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7"
+                ],
+                "Question 4": [
+                    "Ana",
+                    "Carlos",
+                    "Júlia",
+                    "Renata",
+                    "Márcio",
+                    "Felipe",
+                    "Luciana"
+                ],
+                "region_name": "Região 3"
+            }
+        }
+    ]
+}

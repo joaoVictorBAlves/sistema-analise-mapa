@@ -95,7 +95,6 @@ const Map = ({ data, minzoom = 0, maxZoom = 20, variable, scaleMethod, scaleColo
         if (type === "polygons") {
             usePolygonOverlay(map, data, variable, agrouped, mapScale, colors, setDetails, setLocation, setFocusPolygon);
         }
-
         if (type === "markers") {
             useMarkersOverlay(map, data, variable, mapScale);
         }
