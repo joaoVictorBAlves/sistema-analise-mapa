@@ -1,6 +1,6 @@
 {
     "type": "FeatureCollection",
-    "typeMap": "Polygons",
+    "typeMap": "polygons",
     "features": [
         {
             "type": "Feature",
@@ -87,8 +87,7 @@
                     "Resposta B",
                     "Resposta C",
                     "Resposta D"
-                ],
-                "region_name": "Região 1"
+                ]
             }
         },
         {
@@ -163,8 +162,7 @@
                     "Clara",
                     "José",
                     "Antônio"
-                ],
-                "region_name": "Região 2"
+                ]
             }
         },
         {
@@ -246,8 +244,7 @@
                     "Márcio",
                     "Felipe",
                     "Luciana"
-                ],
-                "region_name": "Região 3"
+                ]
             }
         }
     ]

@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 import Head from "next/head";
-import data from "../data/MarkerMap.json";
+import data from "../data/exPolygon.json";
 const Map = dynamic(() => import("../components/Map"), {
   ssr: false
 });
@@ -10,10 +10,10 @@ const Home = () => {
     <div className="container">
       <Map
         data={data}
-        variable="Quantas vezes teve Covid? "
+        variable="Question 3"
         scaleMethod="Quantize"
         scaleColor="Sequencial"
-        // agrouped={"mean"}
+        agrouped={"mean"}
       />
     </div>
   );

@@ -43,13 +43,32 @@ const Map = ({ data, minzoom = 0, maxZoom = 20, variable, scaleMethod, scaleColo
         const auxSet = [];
         data.features.forEach((feauture) => {
             properties = feauture.properties[variable];
-            if (type === "polygons") {
-                if (agrouped === "sum") {
-                    properties = d3.sum(properties);
-                } else if (agrouped === "mean") {
-                    properties = d3.mean(properties);
-                } else if (agrouped === "count") {
-                    properties = properties.length;
+            // DESCOBRE SE PROPERTIES É CONJUNTO DE RESPOSTAS
+            if (Array.isArray(properties)) {
+                // DESCOBRE SE SÃO RESPOSTAS DE MULTIPLA ESCOLHA
+                if (Array.isArray(properties[0])) {
+                    // ACHATA ARRAY
+                    properties = [].concat(...properties);
+                }
+            }
+
+            let numericProperties = properties.map(prop => {
+                if (!isNaN(parseFloat(prop))) {
+                    return parseFloat(prop);
+                }
+                return false
+            });
+
+            if (numericProperties) {
+                properties = numericProperties
+                if (type === "polygons") {
+                    if (agrouped === "sum") {
+                        properties = d3.sum(properties);
+                    } else if (agrouped === "mean") {
+                        properties = d3.mean(properties);
+                    } else if (agrouped === "count") {
+                        properties = properties.length;
+                    }
                 }
             }
             auxSet.push(properties);
