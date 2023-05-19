@@ -8,6 +8,10 @@ import Legend from "./Legend";
 import Details from "./Details";
 import useMarkersOverlay from "./hooks/useMarkersOverlay";
 import usePolygonOverlay from "./hooks/usePolygonOverlay";
+import { scaleOrdinal } from 'd3-scale';
+import { schemeCategory10 } from 'd3-scale-chromatic';
+import { mode, se } from 'd3-array';
+
 let map;
 
 
@@ -18,7 +22,7 @@ const Map = ({ data, minzoom = 0, maxZoom = 20, variable, scaleMethod, scaleColo
     const [focusPolygon, setFocusPolygon] = useState();
     const [polygonLayer, setPolygonLayer] = useState();
     const [legendSet, setLegendSet] = useState([]);
-    let set = [];
+    let set;
     let type = data.typeMap;
     let properties = [];
     let colors = null;
@@ -52,14 +56,14 @@ const Map = ({ data, minzoom = 0, maxZoom = 20, variable, scaleMethod, scaleColo
                 }
             }
 
+            // QUANDO FOR 'NUMERO' CONVERTER PRA NUMERO
             let numericProperties = properties.map(prop => {
                 if (!isNaN(parseFloat(prop))) {
                     return parseFloat(prop);
                 }
                 return false
             });
-
-            if (numericProperties) {
+            if (numericProperties[0]) {
                 properties = numericProperties
                 if (type === "polygons") {
                     if (agrouped === "sum") {
@@ -71,41 +75,50 @@ const Map = ({ data, minzoom = 0, maxZoom = 20, variable, scaleMethod, scaleColo
                     }
                 }
             }
+            if (numericProperties[0] == false) {
+                properties = mode(properties);
+            }
             auxSet.push(properties);
         });
         set = auxSet;
-        setLegendSet(auxSet);
+        setLegendSet(set);
     }, [data, variable, agrouped]);
     // DEFINE SCALES COLORS AND METHODS
     useEffect(() => {
-        if (type === "polygons") {
-            if (scaleColor === "Sequencial") {
-                colors = [0x96C7FF, 0x3693FF, 0x564BF, 0x063973];
-                palete = ['#96C7FF', '#3693FF', '#0564BF', '#063973'];
-            } else if (scaleColor === "Divergente") {
-                colors = [0xF73946, 0xFF6E77, 0x3693FF, 0x1564BF];
-                palete = ['#F73946', '#FF6E77', '#3693FF', '#1564BF'];
+        if (isNaN(set[0])) {
+            // SISTEMAS DE CORES PARA CATEGÓRICOS
+            const scaleColor = scaleOrdinal(schemeCategory10);
+            //...
+        } else {
+            if (type === "polygons") {
+                if (scaleColor === "Sequencial") {
+                    colors = [0x96C7FF, 0x3693FF, 0x564BF, 0x063973];
+                    palete = ['#96C7FF', '#3693FF', '#0564BF', '#063973'];
+                } else if (scaleColor === "Divergente") {
+                    colors = [0xF73946, 0xFF6E77, 0x3693FF, 0x1564BF];
+                    palete = ['#F73946', '#FF6E77', '#3693FF', '#1564BF'];
+                }
             }
-        }
-        if (type === "markers") {
-            if (scaleColor === "Sequencial") {
-                colors = ["baixo", "medioBaixo", "medioAlto", "alto"];
-                palete = ['#96c7ff', '#3693ff', '#0564bf', '#063973'];
-            } else if (scaleColor === "Divergente") {
-                colors = ["vermelho", "vermelhoMedio", "azul-medio", "azul"];
-                palete = ['#f73946', '#ff6e77', '#3693ff', '#1564bf'];
+            if (type === "markers") {
+                if (scaleColor === "Sequencial") {
+                    colors = ["baixo", "medioBaixo", "medioAlto", "alto"];
+                    palete = ['#96c7ff', '#3693ff', '#0564bf', '#063973'];
+                } else if (scaleColor === "Divergente") {
+                    colors = ["vermelho", "vermelhoMedio", "azul-medio", "azul"];
+                    palete = ['#f73946', '#ff6e77', '#3693ff', '#1564bf'];
+                }
             }
-        }
-        if (variable) {
-            if (scaleMethod === "Quantile") {
-                mapScale = d3.scaleQuantile()
-                    .domain(set.sort((a, b) => a - b))
-                    .range(colors);
-            }
-            if (scaleMethod === "Quantize") {
-                mapScale = d3.scaleQuantize()
-                    .domain([d3.min(set.sort((a, b) => a - b)), d3.max(set.sort((a, b) => a - b))])
-                    .range(colors);
+            if (variable) {
+                if (scaleMethod === "Quantile") {
+                    mapScale = d3.scaleQuantile()
+                        .domain(set.sort((a, b) => a - b))
+                        .range(colors);
+                }
+                if (scaleMethod === "Quantize") {
+                    mapScale = d3.scaleQuantize()
+                        .domain([d3.min(set.sort((a, b) => a - b)), d3.max(set.sort((a, b) => a - b))])
+                        .range(colors);
+                }
             }
         }
     }, [set, scaleColor, scaleMethod]);
